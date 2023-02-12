@@ -64,13 +64,15 @@ public class UI {
 							  + ANSI_YELLOW 
 							  + chessMatch.getCurrentPlayer()
 							  + ANSI_RESET);
-		}
-		
+		}	
 		else if (chessMatch.getCurrentPlayer() == Color.WHITE) {
 			System.out.println("Waiting player: " 
 							  + ANSI_WHITE 
 							  + chessMatch.getCurrentPlayer()
 							  + ANSI_RESET);
+		}
+		if (chessMatch.getCheck()) {
+			System.out.println("CHECK!");
 		}
 	}
 	
